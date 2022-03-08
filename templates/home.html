@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Hemodialysis Department==</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href='/static/CSS/home.css' />
+<body style="background-image:  url('/static/CSS/28687440-2085-4258-8488-3d509689765d.jpg');">
+
+
+  <style>
+    h1 {
+      font-family: "";
+      font-size: 60px;
+      font-weight: 800;
+      text-align: center;
+      padding: 60px;
+      color: rgb(247, 247, 247);
+      background-color: rgba(7, 120, 148, 0.288);
+    }
+  </style>
+  <style>
+    .container_buttons {
+      font-size: 40px;
+      text-align: center;
+      padding: 200px;
+      padding-left: 10px;
+      padding-right: 500px;
+      padding-top: 300px;
+      padding-bottom: 10px;
+      float: center;
+      background-color: rgba(169, 169, 169, 0);
+    }
+  </style>
+  <style>
+    .container_register {
+      width: 300px;
+      font-size: 15px;
+      text-align: left;
+      padding-left:15px;
+      padding-right: 20px;
+      padding-top: 10px;
+      padding-bottom: 0px;
+      background-color: rgba(7, 120, 148, 0.288);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      float: left;
+    }
+  </style>
+<style>
+  input[type=text], select {
+    width: 100%;
+    padding: 2px 20px;
+    margin: 0.1px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  </style>
+<h1>Hemodialysis Department</h1>
+<div class="container_register">
+  <form action="http://127.0.0.1:5000/register" method="POST">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname"><br>
+    <label for="phone_number">phone number :</label><br>
+    <input type="text" id="phone_number" name="phone_number"><br>
+    <label for="email">email</label><br>
+    <input type="text" id="email" name="email"><br>
+    <label for="ssn">social security number:</label><br>
+    <input type="text" id="ssn" name="ssn"><br>
+    <label for="medical_history">medical history:</label><br>
+    <input type="text" id="medical_history" name="medical_history"><br>
+    <label for="birthdate">birthdate:</label><br>
+    <input type="text" id="birthdate" name="birthdate"><br>
+    <input type="submit" value="Submit" class="btn btn-success btn-lg">
+  </form>
+</div>
+<div class="container_buttons">
+  <a href="http://127.0.0.1:5000/appointment" button type="button" class="btn btn-warning btn-lg">Appointments</a>
+  <a href="http://127.0.0.1:5000/booking" button type="button" class="btn btn-danger btn-lg">booking</a>
+  <a href="http://127.0.0.1:5000/doctorlist" button type="button" class="btn btn-danger btn-lg">doctor</a>
+</div>
+
+</body>
+
+</html>
